@@ -1,7 +1,8 @@
 // The module 'vscode' contains the VS Code extensibility API
 // Import the module and reference it with the alias vscode in your code below
 import * as vscode from 'vscode';
-
+// save Disposable object to dispose it when the extension is deactivated
+let disposable_list: vscode.Disposable[] = [];
 // This method is called when your extension is activated
 // Your extension is activated the very first time the command is executed
 export function activate(context: vscode.ExtensionContext) {
@@ -18,14 +19,22 @@ export function activate(context: vscode.ExtensionContext) {
     // Display a message box to the user
     vscode.window.showInformationMessage('Hello World from markdown-folding!');
   });
+  disposable_list.push(disposable);
 
   context.subscriptions.push(disposable);
   // Register the folding range provider
-  vscode.languages.registerFoldingRangeProvider({ language: 'markdown' }, new MarkdownFoldingProvider());
+  let fold_disposable =  vscode.languages.registerFoldingRangeProvider({ language: 'markdown' }, new MarkdownFoldingProvider());
+  disposable_list.push(fold_disposable);
 }
 
 // This method is called when your extension is deactivated
-export function deactivate() {}
+export function deactivate() {
+  // console.log("deactivate");
+  // Dispose of the disposable object
+  disposable_list.forEach((disposable) => {
+    disposable.dispose();
+  });
+}
 
 class MarkdownFoldingProvider implements vscode.FoldingRangeProvider {
   /**
@@ -45,7 +54,7 @@ class MarkdownFoldingProvider implements vscode.FoldingRangeProvider {
   provideFoldingRanges(document: vscode.TextDocument, context: vscode.FoldingContext, token: vscode.CancellationToken): vscode.ProviderResult<vscode.FoldingRange[]> {
     const foldingRanges: vscode.FoldingRange[] = [];
     const headerPattern = /^(#+)\s+/; // Pattern to match Markdown headers
-
+    console.log('provideFoldingRanges');
     for (let i = 0; i < document.lineCount; i++) {
       const line = document.lineAt(i);
       const match = headerPattern.exec(line.text); // Check if the line matches the header pattern
@@ -66,7 +75,7 @@ class MarkdownFoldingProvider implements vscode.FoldingRangeProvider {
       foldingRanges.push(new vscode.FoldingRange(start, end)); // Add the folding range
       }
     }
-
+    console.log("end provideFoldingRanges");
     return foldingRanges;
   }
 }

@@ -1,0 +1,2 @@
+- [ ] fix: 插件只在vscode insider生效的问题
+- [ ] fix: 插件在vscode insider 卸载后仍生效的问题
