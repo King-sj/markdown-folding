@@ -1,8 +1,8 @@
-# markdown-folding README
+# markdown-folding
 
-This is the README for your extension "markdown-folding". This extension provides enhanced folding capabilities for markdown files in Visual Studio Code.
+This is the documentation for your extension "markdown-folding". This extension provides enhanced folding capabilities for markdown files in Visual Studio Code.
 
-这是您的扩展 "markdown-folding" 的 README。此扩展为 Visual Studio Code 中的 markdown 文件提供了增强的折叠功能。
+这是您的扩展 "markdown-folding" 的文档。此扩展为 Visual Studio Code 中的 markdown 文件提供了增强的折叠功能。
 
 ## Features
 
@@ -68,20 +68,6 @@ Ensure that you've read through the extensions guidelines and follow the best pr
 
 * [Extension Guidelines](https://code.visualstudio.com/api/references/extension-guidelines)
 
-## Working with Markdown
-
-You can author your README using Visual Studio Code. Here are some useful editor keyboard shortcuts:
-
-您可以使用 Visual Studio Code 编写 README。以下是一些有用的编辑器快捷键：
-
-* Split the editor (`Cmd+\` on macOS or `Ctrl+\` on Windows and Linux).
-* Toggle preview (`Shift+Cmd+V` on macOS or `Shift+Ctrl+V` on Windows and Linux).
-* Press `Ctrl+Space` (Windows, Linux, macOS) to see a list of Markdown snippets.
-
-* 分割编辑器（macOS 上为 `Cmd+\` 或 Windows 和 Linux 上为 `Ctrl+\`）。
-* 切换预览（macOS 上为 `Shift+Cmd+V` 或 Windows 和 Linux 上为 `Shift+Ctrl+V`）。
-* 按 `Ctrl+Space`（Windows、Linux、macOS）查看 Markdown 片段列表。
-
 ## For more information
 
 有关更多信息
@@ -92,3 +78,4 @@ You can author your README using Visual Studio Code. Here are some useful editor
 **Enjoy!**
 
 **享受吧！**
+
