@@ -3,6 +3,7 @@
   "displayName": "markdown-folding",
   "description": "`markdown-folding` is a VSCode extension that allows you to fold long subheadings and code blocks in markdown files, making it easier to navigate and manage large documents.",
   "version": "0.0.1",
+  "publisher": "KSJ",
   "engines": {
     "vscode": "^1.96.0"
   },
