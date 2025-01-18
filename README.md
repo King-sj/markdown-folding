@@ -1,20 +1,22 @@
 # markdown-folding README
 
-This is the README for your extension "markdown-folding". After writing up a brief description, we recommend including the following sections.
+This is the README for your extension "markdown-folding". This extension provides enhanced folding capabilities for markdown files in Visual Studio Code.
 
-这是您的扩展 "markdown-folding" 的 README。在编写简要描述后，我们建议包括以下部分。
+这是您的扩展 "markdown-folding" 的 README。此扩展为 Visual Studio Code 中的 markdown 文件提供了增强的折叠功能。
 
 ## Features
 
-Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
+- Fold and unfold markdown sections based on headers.
+- Customizable folding levels.
+- Keyboard shortcuts for quick folding and unfolding.
 
-描述您的扩展的具体功能，包括扩展运行时的截图。图片路径相对于此 README 文件。
+功能描述：
 
-For example if there is an image subfolder under your extension project workspace:
+- 根据标题折叠和展开 markdown 部分。
+- 可自定义的折叠级别。
+- 快捷键快速折叠和展开。
 
-例如，如果在您的扩展项目工作区下有一个图像子文件夹：
-
-\!\[feature X\]\(images/feature-x.png\)
+\!\[Folding Example\]\(images/folding-example.png\)
 
 > Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
 
@@ -22,35 +24,27 @@ For example if there is an image subfolder under your extension project workspac
 
 ## Requirements
 
-If you have any requirements or dependencies, add a section describing those and how to install and configure them.
+No additional requirements or dependencies.
 
-如果您有任何要求或依赖项，请添加一个部分描述这些要求以及如何安装和配置它们。
+没有额外的要求或依赖项。
 
 ## Extension Settings
-
-Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.
-
-如果您的扩展通过 `contributes.configuration` 扩展点添加了任何 VS Code 设置，请包括在内。
-
-For example:
-
-例如：
 
 This extension contributes the following settings:
 
 此扩展提供以下设置：
 
-* `myExtension.enable`: Enable/disable this extension.
-* `myExtension.thing`: Set to `blah` to do something.
+* `markdownFolding.enable`: Enable/disable this extension.
+* `markdownFolding.foldLevel`: Set the default fold level.
 
-* `myExtension.enable`: 启用/禁用此扩展。
-* `myExtension.thing`: 设置为 `blah` 以执行某些操作。
+* `markdownFolding.enable`: 启用/禁用此扩展。
+* `markdownFolding.foldLevel`: 设置默认折叠级别。
 
 ## Known Issues
 
-Calling out known issues can help limit users opening duplicate issues against your extension.
+No known issues at this time.
 
-指出已知问题可以帮助限制用户针对您的扩展打开重复的问题。
+目前没有已知问题。
 
 ## Release Notes
 
@@ -60,21 +54,9 @@ Users appreciate release notes as you update your extension.
 
 ### 1.0.0
 
-Initial release of ...
+Initial release of markdown-folding.
 
-初始版本的发布...
-
-### 1.0.1
-
-Fixed issue #.
-
-修复了问题 #。
-
-### 1.1.0
-
-Added features X, Y, and Z.
-
-添加了功能 X、Y 和 Z。
+初始版本的发布。
 
 ---
 
